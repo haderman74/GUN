@@ -1,28 +1,28 @@
 function calc() 
 	{
-	//Kosten für Platzmiete
+	//Kosten fÃ¼r Platzmiete
 	var tmpKostenPlatzmiete = 0;
 	var tmpFlaechePlatzmiete = 0;
 	tmpFlaechePlatzmiete = getRadioCheckedValue('Standtiefe') * document.getElementById('Standlaenge').value;
 	if (tmpFlaechePlatzmiete < 21)
 		{
-		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 34;
+		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 38;
 		document.getElementById('KostenPlatzmiete').value = Runden2Dezimal(tmpKostenPlatzmiete);
 		}
 	else
 		{
-		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 30;
+		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 32;
 		document.getElementById('KostenPlatzmiete').value = Runden2Dezimal(tmpKostenPlatzmiete);
 		}
-	//Kosten für Strom
+	//Kosten fÃ¼r Strom
 		var tmpKostenStrom = 0;
 		tmpKostenStrom = getRadioCheckedValue('Strompauschale') * 40;
 		document.getElementById('KostenStrom').value = Runden2Dezimal(tmpKostenStrom);
-	//Kosten für Transparent
+	//Kosten fÃ¼r Transparent
 		var tmpKostenTransparent = 0;
 		tmpKostenTransparent = document.getElementById('LaufmeterTransparent').value * 10;
 		document.getElementById('KostenTransparent').value = Runden2Dezimal(tmpKostenTransparent);
-	//Kosten für Werbeeinschaltung
+	//Kosten fÃ¼r Werbeeinschaltung
 		var tmpEinschaltung = 0;
 		var tmpWerbeabgabe = 0;
 		var tmpKostenWerbeeinschaltung = 0;
