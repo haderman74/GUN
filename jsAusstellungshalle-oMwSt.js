@@ -6,12 +6,12 @@ function calc()
 	tmpFlaechePlatzmiete = getRadioCheckedValue('Standtiefe') * document.getElementById('Standlaenge').value;
 	if (tmpFlaechePlatzmiete < 21)
 		{
-		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 38;
+		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 34;
 		document.getElementById('KostenPlatzmiete').value = Runden2Dezimal(tmpKostenPlatzmiete);
 		}
 	else
 		{
-		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 32;
+		tmpKostenPlatzmiete = tmpFlaechePlatzmiete * 30;
 		document.getElementById('KostenPlatzmiete').value = Runden2Dezimal(tmpKostenPlatzmiete);
 		}
 	//Kosten für Strom
