@@ -26,6 +26,7 @@ function getRadioCheckedValue(radio_name) {
 	}
 	return '';
 }
+//Funktion für Runden
 function Runden2Dezimal(x) { 
 	Ergebnis = Math.round(x * 100) / 100 ; 
 	return Ergebnis; 
