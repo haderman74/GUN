@@ -1,6 +1,6 @@
 function calc() 
 	{
-	//Kosten für Platzmiete 
+	//Kosten für Platzmiete
 	var tmpKostenPlatzmiete = 0;
 	var tmpFlaechePlatzmiete = 0;
 	tmpFlaechePlatzmiete = getRadioCheckedValue('Standtiefe') * $('Standlaenge').value;
